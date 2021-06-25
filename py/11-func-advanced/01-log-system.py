@@ -18,7 +18,7 @@ def print_info():
     print('6: Exit')
     print('*'*20)
 
-# store all users
+# store all emps
 info = []
 
 # Add
@@ -47,6 +47,79 @@ def add_info():
     info.append(info_dict)
     print(info)
 
+# delete
+def del_info():
+    """ delete emp info function """
+
+    while True:
+            # input emp id
+        del_id = int(input('please input need delete emp id: '))
+
+        global info
+
+        # handle user exists
+        if 0 <= del_id < len(info):
+            
+            del_flag = input('You sure you want to delete it? yes or no: ')
+            
+            if del_flag == 'yes':
+                del info[del_id]
+                
+                print(info)
+
+                break
+        # handle user not exists
+        else:
+            print('The emp input is wrong, please re-enter!')
+
+# modify
+def modify_info():
+    while True:
+        # user input modify info[] index
+        modify_num = int(input('Please enter the emp to be modified: '))
+
+        global info
+
+        if 0 <= modify_num < len(info):
+            # handle user exists
+            print(f'employee id: {info[modify_num]["id"]}, name: {info[modify_num]["name"]}, tel: {info[modify_num]["tel"]}')
+
+            # Unterminated expression in f-string; missing close brace
+            new_id = input('Please input id: ')
+            new_name = input('Please input name: ')
+            new_tel = input('Please input phone: ')
+
+            info[modify_num]['id'] = new_id
+            info[modify_num]['name'] = new_name
+            info[modify_num]['tel'] = new_tel
+
+            print(info)
+            break
+        # handle user not exists
+        else:
+            print('The emp input is wrong, please re-enter!')
+     
+# Query
+def search_info():
+    """ search emp info func """
+    name_info = input('Please input looking for emp name: ')  
+
+    # handle user exists
+    for i in info:
+        if name_info == i['name']:
+            print(f'The emp id: {i["id"]}, name: {i["name"]}, tel: {i["tel"]}')
+            break
+    # handle user not exists
+        else:
+            print('Not this emp ... ')
+
+# Show All employee info
+def print_all_info():
+    print('id\tname\ttel')
+    for emp in info:
+        print(f'{emp["id"]}\t{emp["name"]}\t{emp["tel"]}')
+
+
 while True:
     # 显示功能界⾯面
     print_info()
@@ -58,14 +131,21 @@ while True:
     if input_num == '1':
         add_info()
     elif input_num == '2':
-        print('Delete employee')
+        # print('Delete employee')
+        del_info()
     elif input_num == '3':
-        print('Modify employee info')
+        # print('Modify employee info')
+        modify_info()
     elif input_num == '4':
-        print('Query employee info')
+        # print('Query employee info')
+        search_info()
     elif input_num == '5':
-        print('Show All employee info')
+        # print('Show All employee info')
+        print_all_info()
     elif input_num == '6':
-        print('Exit')
+        # print('Exit')
+        quit_flag = input('Are you sure you want to quit? yes or no: ')
+        if quit_flag == 'yes':
+            break
     else:
         print('Input error, please re-enter!!!')
