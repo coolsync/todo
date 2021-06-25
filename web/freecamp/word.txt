@@ -1,0 +1,128 @@
+reusable    可重复使用的
+
+class names start with a period.             类名以句点开头
+
+entry                   条目
+
+In addition             另外 此外
+
+In addition to          除了
+
+common fonts            常用字体
+
+code snippet            代码片段
+
+Specify How Fonts Should Degrade    指定字体应该如何降级
+
+several                 几个
+
+it isn't available anymore      它不再可以使用了
+
+Just like with fonts        就像字体一样
+
+Add Rounded Corners with border-radius  用border-radius添加圆角
+
+benefits    好处
+
+enforce     强制执行
+
+a higher specificity        更高特定性（重要性）
+
+Padding     填充
+
+all HTML elements are essentially little rectangles             所有HTML元素基本上是小矩形
+
+the amount of       大量的
+
+making it appear smaller.           使它显得更小
+
+Negative            负的
+
+so it fills the entire horizontal width         所以它充满整个水平宽度
+
+Use Clockwise Notation      使用顺时针符号表示
+
+a number of             若干， 一些
+
+measurement             尺寸, 度量衡, 大小
+
+tied to                 关联
+
+fresh                   新鲜
+
+prove                   验证 证明 
+
+Prioritize              优先
+
+Subsequent              后续
+
+is done with a space        用空格完成
+
+It doesn't matter       这无关紧要
+
+always take precedence over the first.  永远优先于第一个。
+
+whichever               任何
+
+came last               最后出现
+
+and not the order of their use!         而不是它们的使用顺序！
+
+Leave                   准许 保留
+
+situations              情况
+
+hexadecimal             十六进制
+
+distinct                不同
+
+Altogether              总而言之
+
+the lowest possible value.                        最低的可能值
+
+to Mix Colors           混合颜色
+
+pure colors             纯色
+
+and represents a complete absence of color.     并代表完全没有颜色。
+
+
+Abbreviated             简短的
+
+overwhelmed             不知所措
+
+million                 百万
+
+as exactly              完全一样
+
+Go ahead               开始吧
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Color	        Hex Code
+Dodger Blue	    #1E90FF
+Green	        #00FF00
+Orange	        #FFA500
+Red             #FF0000
+
+
+
+
+
+
+
