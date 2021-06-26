@@ -1,0 +1,25 @@
+with two hyphens        有两个连字符
+
+Attach a Fallback value to a CSS Variable       将回退值附加到 CSS 变量
+
+revert                  恢复 还原
+
+Rather                  而是 确切地说
+
+the typo                错别字
+
+Rather than             与其说是
+
+at some point          在某一点
+
+potential               潜在
+
+recognize               确认 认识
+
+which is typically not ideal.           这通常并不理想
+
+descendants             后代, 派生物
+
+pseudo-class            伪类
+
+For instance            比如
