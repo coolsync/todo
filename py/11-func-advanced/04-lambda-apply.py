@@ -8,7 +8,7 @@ emps = [
     {'name': 'bob', 'age': 30},
 ]
 
-emps.sort(key=lambda x: x['name'])
+emps.sort(key=(lambda x: x['name']))
 print(emps)
 
 emps.sort(key=lambda x: x['name'], reverse=True)

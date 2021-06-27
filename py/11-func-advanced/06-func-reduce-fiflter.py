@@ -1,5 +1,5 @@
 # reduce(func(x,y)，lst)
-# 每次func计算的结果继续和序列列的下⼀一个元素做累积计算
+# 每次func计算的结果继续和序列列的下⼀个元素做累积计算
 # 需求：计算 list1 序列列中各个数字的累加和。
 import functools
 
