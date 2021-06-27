@@ -1,0 +1,41 @@
+a Striped Element   条纹元素
+
+Linear Gradient     线性渐变
+
+scale, move, rotate, skew,      缩放、移动、旋转、倾斜、
+
+respectively    分别
+
+Learn How the CSS @keyframes and animation Properties Work
+了解 CSS @keyframes 和动画属性的工作原理
+
+Fill Mode   填充模式
+
+revert back     恢复原状
+
+You want the button to stay highlighted.
+你希望该按钮保持高亮
+
+Movement        移动    运动
+
+gradually fades 逐渐淡化
+
+consists of two animated pieces.   由两个动画片段组成。
+
+Animate Elements at Variable Rates
+以可变速率设置元素动画
+
+There are a variety of ways to alter    有多种方法可以改变
+
+twinkle         闪耀 闪烁
+
+Change Animation Timing with Keywords   使用关键字更改动画定时器
+
+how the car accelerates and decelerates over the course of the drive.
+汽车在行驶过程中如何加速和减速。
+
+Notice the difference between how the elements move during the animation but end together
+注意观察它们在开始和结束时的不同。
+
+
+
