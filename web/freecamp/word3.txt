@@ -1,0 +1,129 @@
+
+Visual Balance  视觉平衡
+
+deliver         传递
+
+curriculum      课程设置
+
+a number of     一些
+
+except          除了
+
+the last        最后
+
+meet            满足
+
+founded         成立
+
+justify         对齐
+
+draw attention to text  引人注意的文本
+
+symbolize       象征
+
+could be confused   可能会混淆
+
+emphasis        强调
+
+Strikethrough   删除线
+
+underneath      底下
+
+overall background     整体背景
+
+make the foreground easily readable     使前景易于阅读
+
+block out       挡住
+
+stand out more  更突出
+
+Also for the h4     也适用于 h4
+
+takes values for        取值为
+
+blur            模糊
+
+spread          传播
+
+thumbnail       缩略图
+
+Decrease        减少
+
+opacity         不透明度
+
+transparency    透明度
+
+opaque          不透明
+
+a block of text.      一个文本块。
+
+whether that's an image with some transparency  这是否是具有某种透明度的图像
+
+appears consistently        始终如一地出现，
+
+visual consistency     视觉一致性
+
+treats          处理 对待
+
+still behave        仍然表现
+
+ no matter      不管 无论
+
+ visual impairments     视力障碍
+
+no impact   没有影响
+
+ a given spot       一个给定的地点
+
+effectively, the opposite direction     实际上是相反的方向
+
+surrounding 周围
+
+realize     意识到
+
+ next to each other     相邻的
+
+ stacked on         堆叠在
+
+Complementary Colors        互补色
+
+evoke emotions     唤起情绪
+
+visual harmony      视觉和谐
+
+picking a color palette  选择调色板
+
+hues 色调
+
+color wheel 色轮
+
+farther apart       更远的距离
+
+characteristic 
+
+They have the characteristic that if they are combined      它们的特点是，如果它们被结合起来
+
+they "cancel" each other out and create a gray color       它们相互 "抵消"，形成一种灰色。
+
+placed side-by-side        并排放置
+
+visual contrast        视觉对比
+
+more vibrant       更具活力
+
+outdated 过时的
+
+additive RGB model     加色 RGB 模型
+
+the subtractive CMY(K) model       减色 CMY(K) 模型
+
+than they do compared against the white background.     对比他们在白色背景下做的比较
+
+
+
+
+
+
+
+
+
