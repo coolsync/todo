@@ -1,5 +1,5 @@
 # 需求1：把code文件夹所有文件重命名 Python_xxxx
-# 需求2： 删除Python_ 重命名：1， 构造条件的数据 2. 书写if
+# 需求2： 删除Python_ 重命名：1， markup option variable: flag, 2. if
 
 import os
 # 1. list cond dir all dir and file
