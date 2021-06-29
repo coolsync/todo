@@ -1,0 +1,36 @@
+# Applied Accessibility
+
+## Avoid Colorblindness Issues by Using Sufficient Contrast
+
+colorblind          色盲 
+
+distinguish them.           区分它们
+
+gray-scale combinations.       灰度组合
+
+lighter color.      较浅的颜色
+
+tinting         着色
+
+Convey Information  传达信息
+
+
+
+## Give Links Meaning by Using Descriptive Link Text
+
+Give Links Meaning      赋予链接意义
+
+landmark elements       地标元素
+
+
+## Make Links Navigable with HTML Access Keys
+
+Adding an accesskey attribute can make navigation more efficient for keyboard-only users.
+
+
+## Use tabindex to Add Keyboard Focus to an Element
+
+survey      调查
+
+Certain elements        某些元素
+
