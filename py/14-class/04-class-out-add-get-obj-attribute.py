@@ -6,7 +6,7 @@ class Washer():
 
 w1 = Washer()
 
-# add
+# out add
 w1.width = 400
 w1.height = 500
 
