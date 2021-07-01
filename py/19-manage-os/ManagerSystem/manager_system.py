@@ -6,7 +6,9 @@
 # 显示所有 Employee 信息
 # 保存 Employee 信息退出系统
 
+
 from employee import *
+# from ManagerSystem.employee import Employee
 
 
 class EmployeeManager(object):
@@ -56,7 +58,25 @@ class EmployeeManager(object):
         print('-'*20)
 
     def load_emp(self):
-        pass
+        # open file, not exists, prompt the user, use 'w' open
+        try:
+            f = open('emps.data', 'r')
+        except:
+            print('load emps.data failed, create!')
+            f = open('emps.data', 'w')
+        else:
+            # read data to list
+            data = f.read()
+
+            new_list = eval(data)   # convert str to list
+
+            print(new_list)
+
+            # convert dict in list to object data, use lambda collect object to self list 
+            self.emps_list = [Employee(i['name'], i['gender'], i['tel']) for i in new_list] 
+
+        finally:
+            f.close() 
 
     def add_emp(self):  # add
         name = input("Please input name: ")
@@ -124,7 +144,18 @@ class EmployeeManager(object):
             print(f'\t{i.name}\t{i.gender}\t{i.tel}')
 
     def save_emp(self):
-        pass
+        # open file
+        f = open('emps.data', 'w')
+
+        # wirte file, use the form of dict,
+        new_list = [i.__dict__ for i in self.emps_list]
+        
+        f.write(str(new_list))
+
+        # close file
+        f.close()
+
+        print('save ok!')
 
 # emp_mgr = EmployeeManager()
 
