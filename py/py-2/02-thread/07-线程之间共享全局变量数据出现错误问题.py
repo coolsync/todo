@@ -1,6 +1,6 @@
 import threading
 import time
-from typing import get_args
+
 
 g_num = 0
 
