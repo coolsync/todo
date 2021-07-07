@@ -13,14 +13,23 @@ def task():
     
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     task_process = multiprocessing.Process(target=task)
+=======
+    # task_process = multiprocessing.Process(target=task)
+    task_process = multiprocessing.Process(target=task, daemon=True)
+>>>>>>> tmp
     task_process.start()
 
     time.sleep(.5)
     print('main over')
     
     # sub process destroy
+<<<<<<< HEAD
     task_process.terminate()
+=======
+    # task_process.terminate()
+>>>>>>> tmp
 
     exit()
 
