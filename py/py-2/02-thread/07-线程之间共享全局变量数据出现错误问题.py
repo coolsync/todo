@@ -1,6 +1,10 @@
 import threading
 import time
+<<<<<<< HEAD
+from typing import get_args
+=======
 
+>>>>>>> tmp
 
 g_num = 0
 
