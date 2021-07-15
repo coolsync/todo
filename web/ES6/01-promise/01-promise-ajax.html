@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let url = "https://api.apiopen.top/getJoke?page=1&count=2&type=video";
+
+        ajaxP = getAjax(url);
+
+        function getAjax(url) {
+            return new Promise((resolve, reject) => {
+                // 1. create xhr
+                let xhr = new XMLHttpRequest();
+
+                // 2. open url
+                xhr.open('GET', url);
+
+                // 3. listen
+                xhr.onreadystatechange = () => {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        // handle ok
+                        resolve(xhr)
+                    } else if (xhr.readyState == 4 && xhr.status != 200) {
+                        // handle failed
+                        reject(xhr)
+                    }
+                }
+
+                // 4. send
+                xhr.send();
+            })
+        }
+
+        console.log(ajaxP);
+
+        // ajaxP.then((result) => {
+        //     let res = JSON.parse(result.response);
+        //     console.log(res);
+        //     console.log(result) 
+        // }).catch((err) => {
+        //     console.log(err);
+        // });
+
+        fetch(url).then((res) => {
+            // console.log(res)
+            let result = res.json()
+            result.then((res)=>{
+                console.log(res)
+            })
+        })
+    </script>
+</body>
+
+</html>
