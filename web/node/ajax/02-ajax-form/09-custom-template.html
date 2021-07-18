@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/template.js"></script>
+</head>
+
+<body>
+
+    <div id="user-box">
+
+    </div>
+
+    <!-- 定义模板结构 -->
+    <script type="text/html" id="tpl-user">
+        <div>Name: {{name}}</div>
+        <div>年龄： {{ age }}</div>
+        <div>性别：{{   gender}}</div>
+        <div>住址：{{address }}</div>
+    </script>
+
+    <script>
+        // 1. Define Data
+        let data = { name: 'bob', age: 18, gender: 'man', address: 'boling' }
+
+        // 2. Call tpl func
+        let htmlStr = template('tpl-user', data)
+        console.log(htmlStr)
+
+        // 3. render tpl
+        document.querySelector('#user-box').innerHTML = htmlStr
+
+    </script>
+</body>
+
+</html>
