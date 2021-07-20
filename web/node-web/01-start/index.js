@@ -1,10 +1,12 @@
-class User {
-    constructor() {
-        this.username = 'bob';
-        this.password = '123456'
-    }
-}
+let a = 123;
+let b = 456;
+let c = 789;
+let s1 = {username: 'employee'};
+console.log(s1);
 
-let u1 = new User();
+exports.a = a;
 
-console.log(u1);
+module.exports.c = c;
+
+// module.exports = {name: 'bob'};
+module.exports = s1;
