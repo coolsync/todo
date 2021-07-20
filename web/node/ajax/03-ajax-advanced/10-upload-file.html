@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="file" id="file1">
+        <button type="submit" id="btn_upload">submit</button> <br>
+        <!-- show server return
+             img -->
+        <img src="" alt="" width="500" id="img">
+    </form>
+
+    <script>
+        // 'POST', 'http://www.liulongbin.top:3006/api/upload/avatar'
+        // 1. def ui struct
+        // 2. 验证是否选择了文件
+        let btn = document.querySelector('#btn_upload');
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let files = document.querySelector('#file1').files;
+            if (files.length <= 0) {
+                alert('请选择要上传文件！');
+            }
+
+            // 3. append file to FormData
+            let fd = new FormData();
+            fd.append('avatar', files[0]);
+            
+
+            // 4. use xhr send post req
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://www.liulongbin.top:3006/api/upload/avatar');
+            xhr.send(fd)
+
+            // 5. listen xhr evt
+            xhr.onreadystatechange = ()=>{
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let data = JSON.parse(xhr.responseText)
+                    // console.log(data)
+                    if (data.status === 200) {
+                        document.querySelector('#img').src = 'http://www.liulongbin.top:3006' + data.url;
+                    } else {
+                        alert(data.message)
+                    }
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
