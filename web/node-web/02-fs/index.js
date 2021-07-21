@@ -16,7 +16,7 @@ const fs = require('fs');
 // })
 // console.log(123);
 
-function fsReadFile(path) {
+function fsRead(path) {
     return new Promise((resolve, reject) => {
         fs.readFile(path, { flag: 'r', encoding: 'utf8' }, (err, data) => {
             if (err) {
@@ -30,19 +30,19 @@ function fsReadFile(path) {
     })
 }
 
-// let f1 = fsReadFile('hi.txt');
+// let f1 = fsRead('hi.txt');
 
 // f1.then((res) => {
 //     console.log(res)
 // })
 
 async function readList() {
-    let f2 = await fsReadFile('hi.txt')
+    let f2 = await fsRead('hi.txt')
     // console.log(f2)
-    let f3 = await fsReadFile(f2 + '.txt')
+    let f3 = await fsRead(f2 + '.txt')
     // console.log(f3)
 
-    let f3Content = await fsReadFile(f3 + '.txt')
+    let f3Content = await fsRead(f3 + '.txt')
     console.log(f3Content);
 }
 
