@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery.js"></script>
+</head>
+
+<body>
+    <button id="btn_post">Initiate a POST request</button>
+
+    <script>
+        $(() => {
+            $('#btn_post').on('click', () => {
+                $.post('http://www.liulongbin.top:3006/api/addbook', {
+                    bookname: "歌德诗集",
+                    author: "歌德",
+                    publisher: "CCC"
+                }, (res) => {
+                    console.log(res);
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
