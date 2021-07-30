@@ -50,12 +50,11 @@ DETACH DATABASE 'Alias-Name';
 
 
 
-# Insert 语句
+## Insert 
 
 
 
-# Select 语句
-
+## Select
 
 
 
@@ -107,4 +106,96 @@ DETACH DATABASE 'Alias-Name';
 
 
 
+
+
+
+
+
+### SQLite Bitwise Operators
+
+Following is the truth table for **&** and **|**.
+
+|  p   |  q   | p & q | p \| q |
+| :--: | :--: | :---: | :----: |
+|  0   |  0   |   0   |   0    |
+|  0   |  1   |   0   |   1    |
+|  1   |  1   |   1   |   1    |
+|  1   |  0   |   0   |   1    |
+
+
+
+
+
+
+
+## SQLite - Expressions
+
+#### Syntax
+
+
+
+```sqlite
+SELECT column1, column2, columnN 
+FROM table_name 
+WHERE [CONDITION | EXPRESSION];
+```
+
+### Boolean Expressions
+
+```sqlite
+SELECT column1, column2, columnN 
+FROM table_name 
+WHERE SINGLE VALUE MATCHING EXPRESSION;
+```
+
+
+
+```sqlite
+sqlite> SELECT * FROM COMPANY WHERE SALARY = 10000;
+ID          NAME        AGE         ADDRESS     SALARY
+----------  ----------  ----------  ----------  ----------
+4           James        24          Houston   10000.0
+```
+
+
+
+### Numeric Expression
+
+
+
+```sqlite
+SELECT numerical_expression as  OPERATION_NAME
+[FROM table_name WHERE CONDITION] ;
+```
+
+```sqlite
+sqlite> SELECT (15 + 6) AS ADDITION
+ADDITION = 21
+```
+
+```sqlite
+sqlite> SELECT COUNT(*) AS "RECORDS" FROM COMPANY; 
+RECORDS = 7
+```
+
+### Date Expressions
+
+
+
+```sqlite
+sqlite>  SELECT CURRENT_TIMESTAMP;
+CURRENT_TIMESTAMP  
+-------------------
+2021-07-29 06:54:10
+```
+
+
+
+
+
+## WHERE Clause (子句)
+
+
+
+## AND & OR Operators
 
