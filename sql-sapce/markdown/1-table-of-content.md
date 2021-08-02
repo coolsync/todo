@@ -1,8 +1,40 @@
 # SQLite
 
+REFENCE:
+
+```bash
+
+- [SQLite - Home](https://www.tutorialspoint.com/sqlite/index.htm)
+- [SQLite - Overview](https://www.tutorialspoint.com/sqlite/sqlite_overview.htm)
+- [SQLite - Installation](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
+- [SQLite - Commands](https://www.tutorialspoint.com/sqlite/sqlite_commands.htm)
+- [SQLite - Syntax](https://www.tutorialspoint.com/sqlite/sqlite_syntax.htm)
+- [SQLite - Data Type](https://www.tutorialspoint.com/sqlite/sqlite_data_types.htm)
+- [SQLite - CREATE Database](https://www.tutorialspoint.com/sqlite/sqlite_create_database.htm)
+- [SQLite - ATTACH Database](https://www.tutorialspoint.com/sqlite/sqlite_attach_database.htm)
+- [SQLite - DETACH Database](https://www.tutorialspoint.com/sqlite/sqlite_detach_database.htm)
+- [SQLite - CREATE Table](https://www.tutorialspoint.com/sqlite/sqlite_create_table.htm)
+- [SQLite - DROP Table](https://www.tutorialspoint.com/sqlite/sqlite_drop_table.htm)
+- [SQLite - INSERT Query](https://www.tutorialspoint.com/sqlite/sqlite_insert_query.htm)
+- [SQLite - SELECT Query](https://www.tutorialspoint.com/sqlite/sqlite_select_query.htm)
+- [SQLite - Operators](https://www.tutorialspoint.com/sqlite/sqlite_operators.htm)
+- [SQLite - Expressions](https://www.tutorialspoint.com/sqlite/sqlite_expressions.htm)
+- [SQLite - WHERE Clause](https://www.tutorialspoint.com/sqlite/sqlite_where_clause.htm)
+- [SQLite - AND & OR Clauses](https://www.tutorialspoint.com/sqlite/sqlite_and_or_clauses.htm)
+- [SQLite - UPDATE Query](https://www.tutorialspoint.com/sqlite/sqlite_update_query.htm)
+- [SQLite - DELETE Query](https://www.tutorialspoint.com/sqlite/sqlite_delete_query.htm)
+- [SQLite - LIKE Clause](https://www.tutorialspoint.com/sqlite/sqlite_like_clause.htm)
+- [SQLite - GLOB Clause](https://www.tutorialspoint.com/sqlite/sqlite_glob_clause.htm)
+- [SQLite - LIMIT Clause](https://www.tutorialspoint.com/sqlite/sqlite_limit_clause.htm)
+- [SQLite - ORDER By Clause](https://www.tutorialspoint.com/sqlite/sqlite_order_by.htm)
+- [SQLite - GROUP By Clause](https://www.tutorialspoint.com/sqlite/sqlite_group_by.htm)
+- [SQLite - HAVING Clause](https://www.tutorialspoint.com/sqlite/sqlite_having_clause.htm)
+- [SQLite - DISTINCT Keyword](https://www.tutorialspoint.com/sqlite/sqlite_distinct_keyword.htm)
+```
 
 
-## 创建数据库
+
+## CREATE Database
 
 语法
 
@@ -10,19 +42,21 @@
 
 
 
-## 附加数据库
+## ATTACH Database
 
 
 
-基本语法如下：
+
 
 ```sql
 ATTACH DATABASE file_name AS database_name;
 ```
 
-## 分离数据库
 
-基本语法如下：
+
+## DETACH Database
+
+
 
 ```sql
 DETACH DATABASE 'Alias-Name';
@@ -30,7 +64,7 @@ DETACH DATABASE 'Alias-Name';
 
 
 
-## 创建表
+## CREATE Table
 
 **CREATE TABLE** 语句用于创建一个新表
 
@@ -42,7 +76,7 @@ DETACH DATABASE 'Alias-Name';
 
 
 
-## 删除表
+## DROP Table
 
 **DROP TABLE** 语句用来删除表定义及其所有相关数据、索引、触发器、约束和该表的权限
 
@@ -50,19 +84,23 @@ DETACH DATABASE 'Alias-Name';
 
 
 
-## Insert 
+## INSERT Query
 
 
 
-## Select
+
+
+## SELECT Query
 
 
 
-## SQLite 运算符
+
+
+## SQLite - Operators
 
 
 
-### SQLite 算术运算符
+### SQLite Arithmetic Operators
 
 假设变量 a=10，变量 b=20，则：
 
@@ -78,32 +116,49 @@ DETACH DATABASE 'Alias-Name';
 
 
 
-### SQLite 比较运算符
+### SQLite Comparison Operators
 
 
 
-### SQLite 逻辑运算符
-
-逻辑运算符列表:
-
-| 运算符  | 描述                                                         |
-| :------ | :----------------------------------------------------------- |
-| AND     | AND 运算符允许在一个 SQL 语句的 WHERE 子句中的多个条件的存在。 |
-| BETWEEN | BETWEEN 运算符用于在给定最小值和最大值范围内的一系列值中搜索值。 |
-| EXISTS  | EXISTS 运算符用于在满足一定条件的指定表中搜索行的存在。      |
-| IN      | IN 运算符用于把某个值与一系列指定列表的值进行比较。          |
-| NOT IN  | IN 运算符的对立面，用于把某个值与不在一系列指定列表的值进行比较。 |
-| LIKE    | LIKE 运算符用于把某个值与使用通配符运算符的相似值进行比较。  |
-| GLOB    | GLOB 运算符用于把某个值与使用通配符运算符的相似值进行比较。GLOB 与 LIKE 不同之处在于，它是大小写敏感的。 |
-| NOT     | NOT 运算符是所用的逻辑运算符的对立面。比如 NOT EXISTS、NOT BETWEEN、NOT IN，等等。**它是否定运算符。** |
-| OR      | OR 运算符用于结合一个 SQL 语句的 WHERE 子句中的多个条件。    |
-| IS NULL | NULL 运算符用于把某个值与 NULL 值进行比较。                  |
-| IS      | IS 运算符与 = 相似。                                         |
-| IS NOT  | IS NOT 运算符与 != 相似。                                    |
-| \|\|    | 连接两个不同的字符串，得到一个新的字符串。                   |
-| UNIQUE  | UNIQUE 运算符搜索指定表中的每一行，确保唯一性（无重复）。    |
+| <>   | Checks if the values of two operands are equal or not, if the values are not equal, then the condition becomes true. | (a <> b) is true. |
+| ---- | ------------------------------------------------------------ | :---------------: |
 
 
+
+### SQLite Logical Operators
+
+[Show Examples](https://www.tutorialspoint.com/sqlite/sqlite_logical_operators.htm)
+
+| Sr.No. |                    Operator & Description                    |
+| ------ | :----------------------------------------------------------: |
+|        |                                                              |
+| 1      | **AND** The AND operator allows the existence of multiple conditions in an SQL statement's WHERE clause. |
+|        |                                                              |
+| 2      | **BETWEEN** The BETWEEN operator is used to search for values that are within a  set of values, given the minimum value and the maximum value. |
+|        |                                                              |
+| 3      | **EXISTS** The EXISTS operator is used to search for the presence of a row in a specified table that meets certain criteria. |
+|        |                                                              |
+| 4      | **IN** The IN operator is used to compare a value to a list of literal values that have been specified. |
+|        |                                                              |
+| 5      | **NOT IN** The negation of IN operator which is used to compare a value to a list of literal values that have been specified. |
+|        |                                                              |
+| 6      | **LIKE** The LIKE operator is used to compare a value to similar values using wildcard operators. |
+|        |                                                              |
+| 7      | **GLOB** The GLOB operator is used to compare a value to similar values using  wildcard operators. Also, GLOB is case sensitive, unlike LIKE. |
+|        |                                                              |
+| 8      | **NOT** The NOT operator reverses the meaning of the logical operator with which it is used. Eg. NOT EXISTS, NOT BETWEEN, NOT IN, etc. **This is negate operator.** |
+|        |                                                              |
+| 9      | **OR** The OR operator is used to combine multiple conditions in an SQL statement's WHERE clause. |
+|        |                                                              |
+| 10     | **IS NULL** The NULL operator is used to compare a value with a NULL value. |
+|        |                                                              |
+| 11     |              **IS** The IS operator work like =              |
+|        |                                                              |
+| 12     |           **IS NOT** The IS operator work like !=            |
+|        |                                                              |
+| 13     |    **\|\|** Adds two different strings and make new one.     |
+|        |                                                              |
+| 14     | **UNIQUE** The UNIQUE operator searches every row of a specified table for uniqueness (no duplicates). |
 
 
 
@@ -132,13 +187,13 @@ Following is the truth table for **&** and **|**.
 
 #### Syntax
 
-
-
 ```sqlite
 SELECT column1, column2, columnN 
 FROM table_name 
 WHERE [CONDITION | EXPRESSION];
 ```
+
+
 
 ### Boolean Expressions
 
@@ -147,8 +202,6 @@ SELECT column1, column2, columnN
 FROM table_name 
 WHERE SINGLE VALUE MATCHING EXPRESSION;
 ```
-
-
 
 ```sqlite
 sqlite> SELECT * FROM COMPANY WHERE SALARY = 10000;
@@ -160,8 +213,6 @@ ID          NAME        AGE         ADDRESS     SALARY
 
 
 ### Numeric Expression
-
-
 
 ```sqlite
 SELECT numerical_expression as  OPERATION_NAME
@@ -178,9 +229,9 @@ sqlite> SELECT COUNT(*) AS "RECORDS" FROM COMPANY;
 RECORDS = 7
 ```
 
+
+
 ### Date Expressions
-
-
 
 ```sqlite
 sqlite>  SELECT CURRENT_TIMESTAMP;
@@ -193,9 +244,62 @@ CURRENT_TIMESTAMP
 
 
 
-## WHERE Clause (子句)
+## WHERE Clause
 
 
 
 ## AND & OR Operators
 
+
+
+
+
+## UPDATE Query
+
+
+
+## DELETE Query
+
+
+
+
+
+## SQLite - LIKE Clause
+
+
+
+
+
+## SQLite - GLOB Clause
+
+
+
+
+
+## LIMIT Clause
+
+
+
+
+
+
+
+## ORDER By Clause
+
+
+
+
+
+## GROUP By Clause
+
+
+
+
+
+## HAVING Clause
+
+
+
+
+
+## DISTINCT Keyword
