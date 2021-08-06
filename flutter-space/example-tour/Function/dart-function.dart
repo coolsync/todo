@@ -12,13 +12,13 @@ var nobleGases = {
 bool isNoble(int atomicNumber) => nobleGases[atomicNumber] != null;
 
 // 命名参数
-void enableFlags({bool? bold, bool? hidden}) {}
+void enableFlags({bool bold, bool hidden}) {}
 
 // 使用 required 标识 一个参数 为 必须参数
 // const Scrollbar({Key? key, required Widget child}) {}
 
 // 可选的位置参数
-String say(String from, String msg, [String? device]) {
+String say(String from, String msg, [String device]) {
   var result = '$from say $msg';
   if (device != null) {
     result = '$result with a $device';
@@ -61,6 +61,5 @@ main(List<String> args) {
   print(say('Bob', 'Howdy', 'smoke signal') ==
       'Bob say Howdy with a smoke signal');
 
-  doStuff()
-  ;
+  doStuff();
 }

@@ -1,8 +1,8 @@
 class Point {
   // late int x;
   // late int y;
-  int? x;
-  int? y;
+  int x;
+  int y;
 }
 
 void main() {
