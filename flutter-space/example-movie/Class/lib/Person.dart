@@ -9,7 +9,7 @@ class Person {
   }
 
   void _wife() {
-    print('我的 $name wife');
+    print('我的 wife $name');
   }
 
   Person(this.name);

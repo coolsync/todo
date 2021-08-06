@@ -1,6 +1,6 @@
 // 声明类
 class Person {
-  String? name; // 属性
+  String name; // 属性
 
   // 方法
   void printInfo() {

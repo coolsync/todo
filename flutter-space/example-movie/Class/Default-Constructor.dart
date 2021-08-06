@@ -11,8 +11,8 @@
 // }
 
 class Point {
-  num? x;
-  num? y;
+  num x;
+  num y;
 
   // Define default constructur (普遍构造函数)
   Point(num x, num y) {

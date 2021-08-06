@@ -2,7 +2,7 @@ const double xOrigin = 0;
 const double yOrigin = 0;
 
 class Point {
-  num? x, y;
+  num x, y;
 
   Point(this.x, this.y); // default constructor
 

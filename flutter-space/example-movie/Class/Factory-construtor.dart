@@ -41,4 +41,9 @@ void main() {
   // 实例化操作
   var p1 = new Person('关羽');
   print(p1.name);
+
+  var p2 = new Person('ZhangFei');
+  print(p2.name);
+
+  print(p1 == p2); // true
 }

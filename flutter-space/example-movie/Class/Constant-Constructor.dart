@@ -26,7 +26,7 @@ void main() {
   var p4 = new ImmutablePoint(1, 2);
   print(p3 == p4); // false
 
-  // constant construct function, use const
+  // Use const create constant construct function
   var p5 = const ImmutablePoint(1, 2);
   var p6 = const ImmutablePoint(1, 2);
   print(p5 == p6); // true
