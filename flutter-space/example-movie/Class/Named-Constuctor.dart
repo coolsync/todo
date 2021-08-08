@@ -23,7 +23,7 @@ void main() {
   Point p1 = new Point.origin();
   print(p1.x);
 
-// 设置坐标位置
-  Point p2 = new Point.fromJson(x: 6, y: 6);
+  // 设置坐标位置
+  Point p2 = new Point.fromJson(x: 6, y: 6);  
   print(p2.x);
 }

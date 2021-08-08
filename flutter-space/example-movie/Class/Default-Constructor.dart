@@ -2,7 +2,7 @@
 //   num? x;
 //   num? y;
 
-//   // Define default constructur (普遍构造函数)
+// Define default constructur (普遍构造函数)
 //   Point() {
 //     print('我是普通构造函数，实例化时，自动调用');
 //     this.x = 0;
